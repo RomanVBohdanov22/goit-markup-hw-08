@@ -1,0 +1,39 @@
+:root {
+    --bgcolor: #f5f5f5;
+    --icons-social-grey: #afb1b8;
+    --icons-bg-inactive: rgba(255, 255, 255, 0.1);
+    --bg-color-grey: #f5f4fa;
+    --mainfont: 'Roboto', sans-serif;
+    --bannerfont: 'Raleway', sans-serif;
+    --bluebtn: #2196f3;
+    --bluetextclr: var(--bluebtn);
+    --white-bg: #ffffff;
+    --whitetxt: #ffffff;
+    --bannerclr: #2f303a;
+    --fontcolorh3: #212121;
+    --fontcolordescrp: #757575;
+    --text-wrapper-bg: #f5f4fa;
+    --fontblack: #000000;
+    --greybtbn: #f4f5fa;
+    --background-card-color: #eeeeee;
+    --header-frame-color: #ececec;
+    --card-item-gap: 30px;
+    --card-item-rows-number: 3;
+    --close-btn-transp: rgba(255, 255, 255, 0.1);
+    --card-wrapper-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    /*--blue-order-button-active: #188ce8;*/
+    /*--logoshadow: 0px 4px 4px rgba(0, 0, 0, 0.25); /*text-shadow*/
+    --our-command-bg: #f5f4fa;
+    --button-to-order-active-clr: #188ce8;
+    --button-to-order-box-shadow-color: rgba(0, 0, 0, 0.15);
+    --opasity-const: 0.6;
+    --gradient-start-hero: rgba(47, 48, 58, 0.4);
+    --gradient-end-hero: rgba(47, 48, 58, 0.4);
+    --modal-bg-color: rgba(0, 0, 0, 0.2);
+    --thumb-about-bg-color: rgba(47, 48, 58, 0.8);
+    --clients-color: #afb1b8;
+    --overlay-blue: rgba(33, 150, 243, 0.9);
+    --modal-form-lines-color: rgba(33, 33, 33, 0.2);
+    --color-input-border: rgba(255, 255, 255, 0.3);
+}

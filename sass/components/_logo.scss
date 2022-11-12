@@ -1,0 +1,25 @@
+.logo {
+    font-size: 26px;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    font-family: var(--bannerfont);
+    color: inherit;
+    /*var(--fontblack);*/
+    font-weight: 700;
+    line-height: 1.19;
+    /*padding: 24px 0;*/
+}
+
+.logo--accent {
+    color: var(--bluetextclr);
+}
+
+/*.header-logo, .footer-logo {
+    padding: 24px 0;
+}*/
+
+.footer .logo {
+    display: inline-block;
+    margin-bottom: 20px;
+    /*margin: 0 auto;*/
+}
