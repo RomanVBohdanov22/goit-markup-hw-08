@@ -1,11 +1,11 @@
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 h1,
@@ -16,61 +16,76 @@ h5,
 h6,
 ul,
 p {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 body {
-    background-color: var(--white-bg);
-    font-family: var(--mainfont);
-    font-size: 14px;
-    color: var(--fontblack);
-    /*--fontcolordescrp*/
+  background-color: var(--white-bg);
+  font-family: var(--mainfont);
+  font-size: 14px;
+  color: var(--fontblack);
+  /*--fontcolordescrp*/
+  /*&.modal-open {
+            overflow: hidden;
+        }*/
 }
 
 .visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 .no-marker-list {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  /*outline: 2px solid tomato; /*Репета-стайл*/
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
     width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    /*outline: 2px solid tomato; /*Репета-стайл*/
+  }
 }
+
 .section-paddings-px {
-    /*.section згідно ТЗ!*/
-    width: 100%;
-    padding-top: 94px;
-    padding-bottom: 94px;
-    /*margin-left: 0px;
+  /*.section згідно ТЗ!*/
+  width: 100%;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  /*margin-left: 0px;
   margin-right: 0px;*/
-    /*outline: 2px solid palegreen; /*Репета-стайл*/
+  /*outline: 2px solid palegreen; /*Репета-стайл*/
 }
 
 .all-big-chars {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
