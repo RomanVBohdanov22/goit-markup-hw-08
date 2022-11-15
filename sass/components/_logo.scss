@@ -1,25 +1,37 @@
 .logo {
-    font-size: 26px;
-    letter-spacing: 0.03em;
-    text-decoration: none;
-    font-family: var(--bannerfont);
-    color: inherit;
-    /*var(--fontblack);*/
-    font-weight: 700;
-    line-height: 1.19;
-    /*padding: 24px 0;*/
-}
+  //font-size: 26px;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  font-family: var(--bannerfont);
+  color: inherit;
+  /*padding: 24px 0;*/
+  font-weight: 700;
+  line-height: 1.19;
 
-.logo--accent {
+
+  &--accent {
     color: var(--bluetextclr);
-}
+  }
 
-/*.header-logo, .footer-logo {
+  /*.header-logo, .footer-logo {
     padding: 24px 0;
 }*/
 
-.footer .logo {
+  .footer & {
     display: inline-block;
     margin-bottom: 20px;
     /*margin: 0 auto;*/
+  }
+
+        @media screen and (min-width: 480px) {
+            font-size: 24px;
+        }
+    
+        @media screen and (min-width: 768px) {
+            font-size: 24px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            font-size: 26px;
+        }
 }

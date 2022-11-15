@@ -1,7 +1,11 @@
 .header {
   border-bottom: 1px solid var(--header-frame-color);
 
-  &--flex-box,
+  &--flex-box {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
   &__navigation {
     display: flex;
     align-items: center;
