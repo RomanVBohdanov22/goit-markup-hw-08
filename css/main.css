@@ -984,6 +984,21 @@ body {
   padding-top: 40px;
   padding-bottom: 40px;
 }
+@media screen and (min-width: 480px) {
+  .modal {
+    top: 0;
+    left: 0;
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    top: calc(50% - 225px);
+    left: calc(50% - 305px);
+    width: 450px;
+    height: 609px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal {
     top: calc(50% - 260px);

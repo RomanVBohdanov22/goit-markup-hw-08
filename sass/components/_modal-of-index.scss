@@ -37,7 +37,19 @@
         @media screen and (min-width: 1200px) {
             width: 1200px;
         }
-    */
+    */ 
+        @media screen and (min-width: 480px) {
+                    top: 0;
+                    left: 0;
+                    width: 450px;
+                    //display: none;
+                 }
+        @media screen and (min-width: 768px) {
+                    top: calc(100% / 2 - 225px);
+                    left: calc(100% / 2 - 305px);
+                    width: 450px;
+                    height: 609px;
+                }
          @media screen and (min-width: 1200px) {
             top: calc(100% / 2 - 260px);
             left: calc(100% / 2 - 264px);
