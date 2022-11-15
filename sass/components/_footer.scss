@@ -66,13 +66,7 @@
     }
   }
 }
-.social-links-hello {
-  margin-top: 0;
-  margin-bottom: 20px;
-  font-weight: 500;
-  letter-spacing: 0.03em;
-  line-height: 1.14;
-}
+
 
 .social-links {
   display: flex;
@@ -80,42 +74,41 @@
   align-items: baseline;
   justify-content: center;
   gap: 10px;
-}
 
-.social-links__item {
-}
-/*.text-wrapper>.social-links-link,*/
-.social-links__icon {
-  & {
-    width: 20px;
-    height: 20px;
-    fill: currentColor;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &__item {
   }
-}
-.social-links__link {
-  & {
-    color: var(--whitetxt);
-    text-decoration: none;
-    letter-spacing: 0.03em;
-    line-height: 1.71;
-    width: 44px;
-    height: 44px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--icons-bg-inactive);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    border-radius: 50%;
+  &__icon {
+    & {
+      width: 20px;
+      height: 20px;
+      fill: currentColor;
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
   }
-  &:hover,
-  &:focus {
-    background-color: var(--bluebtn);
-  }
-  &:hover .social-links__icon,
-  &:focus .social-links__icon {
-    fill: var(--whitetxt);
+  &__link {
+    & {
+      color: var(--whitetxt);
+      text-decoration: none;
+      letter-spacing: 0.03em;
+      line-height: 1.71;
+      width: 44px;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--icons-bg-inactive);
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      border-radius: 50%;
+    }
+    &:hover,
+    &:focus {
+      background-color: var(--bluebtn);
+    }
+    &:hover .social-links__icon,
+    &:focus .social-links__icon {
+      fill: var(--whitetxt);
+    }
   }
 }
 
@@ -127,6 +120,7 @@
   right: 0;
 }
 
+.social-links-hello,
 .footer-block-hello {
   margin-top: 0;
   margin-bottom: 20px;
@@ -134,6 +128,7 @@
   letter-spacing: 0.03em;
   line-height: 1.14;
 }
+
 .footer-form {
   display: flex;
   justify-content: center;
