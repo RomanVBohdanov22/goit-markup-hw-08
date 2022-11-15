@@ -226,7 +226,6 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__btn:hover, .header__btn:focus {
-  /*fill: var(--bluebtn);*/
   background-color: var(--bluebtn);
 }
 @media screen and (min-width: 768px) {
