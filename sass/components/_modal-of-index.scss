@@ -20,11 +20,30 @@
 .modal {
     margin: 0 auto;
     position: fixed;
-    top: calc(100% / 2 - 260px);
+
+    /*top: calc(100% / 2 - 260px);
     left: calc(100% / 2 - 264px);
-    /*outline: orange 2px solid;*/
     width: 528px;
-    height: 581px;
+    height: 581px;*/
+    /*
+    @media screen and (min-width: 480px) {
+            width: 480px;
+        }
+    
+        @media screen and (min-width: 768px) {
+            width: 768px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            width: 1200px;
+        }
+    */
+         @media screen and (min-width: 1200px) {
+            top: calc(100% / 2 - 260px);
+            left: calc(100% / 2 - 264px);
+            width: 528px;
+            height: 581px;
+         }
     display: block;
     border: none;
     border-radius: 4px;
