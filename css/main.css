@@ -176,7 +176,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /*flex-direction: row;*/
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 @media screen and (max-width: 761px) {
   .header__navigation {
@@ -191,12 +194,32 @@ body {
 .header__navigation__contacts {
   margin-left: auto;
 }
+.header__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  border: none;
+  cursor: pointer;
+  background-color: var(--bgcolor);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header__btn:hover, .header__btn:focus {
+  fill: var(--bluebtn);
+}
+@media screen and (min-width: 768px) {
+  .header__btn {
+    display: none;
+  }
+}
 
+/*display: flex;
+ gap: 50px;
+ margin-left: 93px;
+*/
 .nav-list {
-  /*display: flex;
-   gap: 50px;
-   margin-left: 93px;
-  */
   display: none;
 }
 @media screen and (min-width: 768px) {
@@ -210,6 +233,10 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 50px;
     margin-left: 93px;
   }
 }
@@ -224,10 +251,31 @@ body {
 }
 
 .contacts-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 50px;
+  /*display: flex;
+  gap: 50px;*/
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .contacts-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 50px;
+  }
 }
 .contacts-list__item .link {
   display: -webkit-box;
