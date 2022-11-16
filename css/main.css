@@ -983,11 +983,57 @@ body {
   fill: var(--bluebtn);
 }
 .mobile-menu__nav {
-  /*display: flex;
-  flex-direction: column;
-  gap: 35px;*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 151px;
+  /*@media screen and (min-width: 480px) {
+      margin-bottom: 151px;
+  }*/
+  /*@media screen and (min-width: 1200px) {
+      margin-bottom: 302px;
+  }*/
 }
-.mobile-menu__link:hover, .mobile-menu__link:focus {
+@media screen and (min-width: 768px) {
+  .mobile-menu__nav {
+    margin-bottom: 302px;
+  }
+}
+.mobile-menu__link {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--fontcolorh3);
+}
+.mobile-menu__adress-link {
+  font-family: inherit;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--bluetextclr);
+}
+.mobile-menu__adress-link:nth-child(1) {
+  font-size: 24px;
+  color: var(--fontcolordescrp);
+}
+.mobile-menu__social-link {
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--bluetextclr);
+}
+.mobile-menu__link, .mobile-menu__social-link, .mobile-menu__adress-link {
+  text-decoration: none;
+}
+.mobile-menu__link:hover, .mobile-menu__link:focus, .mobile-menu__social-link:hover, .mobile-menu__social-link:focus, .mobile-menu__adress-link:hover, .mobile-menu__adress-link:focus {
   color: var(--bluebtn);
 }
 .mobile-menu__list {
@@ -998,19 +1044,14 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 35px;
+  gap: 32px;
 }
 .mobile-menu__address {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   gap: 35px;
+  margin-top: 0;
+  margin-bottom: 64px;
 }
-.mobile-menu__social {
+.mobile-menu__social-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1018,6 +1059,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 5px;
 }
 .backdrop {
