@@ -1,6 +1,7 @@
 @import "./utils/variables";
 @import "./utils/global";
 @import "./base/normalize";
+/*components*/
 @import "./components/header";
 @import "./components/logo";
 @import "./components/footer";
@@ -9,6 +10,7 @@
 @import "./components/about";
 @import "./components/team";
 @import "./components/regular-customers";
+@import "./components/mobile-menu";
 @import "./components/modal-of-index";
 @import "./components/filters";
 @import "./components/cards";
