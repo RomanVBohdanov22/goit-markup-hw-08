@@ -957,7 +957,10 @@ body {
 
 .modal {
   margin: 0 auto;
-  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: relative;
   /*top: calc(100% / 2 - 260px);
   left: calc(100% / 2 - 264px);
   width: 528px;
@@ -989,18 +992,21 @@ body {
     top: 0;
     left: 0;
     width: 450px;
+    position: relative;
   }
 }
 @media screen and (min-width: 768px) {
   .modal {
+    position: absolute;
     top: calc(50% - 225px);
-    left: calc(50% - 305px);
+    left: calc(50% - 300px);
     width: 450px;
     height: 609px;
   }
 }
 @media screen and (min-width: 1200px) {
   .modal {
+    position: fixed;
     top: calc(50% - 260px);
     left: calc(50% - 264px);
     width: 528px;
