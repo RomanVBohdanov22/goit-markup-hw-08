@@ -2,6 +2,7 @@
 .team {
     background-color: var(--our-command-bg);
     margin-top: 0;
+    width: 100%;
     /*padding-top: 0;*/
 }
 
@@ -19,8 +20,19 @@
 
 .team__list {
     display: flex;
-    flex-direction: row;
     gap: 30px;
+    //flex-direction: row;
+            @media screen and (max-width:767px) {
+                    flex-direction: column;
+                }
+            
+                @media screen and (min-width:768px) {
+                    flex-wrap: wrap;
+                }
+            
+                @media screen and (min-width:1200px) {
+                    flex-direction: row;
+                }
 }
 
 .text__wrapper {
