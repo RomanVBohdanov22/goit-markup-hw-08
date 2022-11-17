@@ -15,9 +15,20 @@
 
 
 .regular-customers__list {
-    display: flex;
+    /*display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 30px;*/
+        display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        
+            @media screen and (min-width: 1200px) {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 30px;
+            }
 }
 
 .regular-customer__item
