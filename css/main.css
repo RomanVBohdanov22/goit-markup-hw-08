@@ -934,7 +934,7 @@ body {
   margin-bottom: 0px;
   padding-bottom: 30px;
   padding-top: 30px;
-  width: 270px;
+  width: 100%;
   border-radius: 0px 0px 4px 4px;
   -webkit-box-shadow: var(--card-wrapper-shadow);
           box-shadow: var(--card-wrapper-shadow);
@@ -942,6 +942,16 @@ body {
   text-align: center;
   background: var(--white-bg);
   /*.social-links__link описаний в _footer.scss*/
+}
+@media screen and (min-width: 768px) {
+  .text__wrapper {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .text__wrapper {
+    width: 270px;
+  }
 }
 .text__wrapper .social-links__link {
   color: var(--icons-social-grey);

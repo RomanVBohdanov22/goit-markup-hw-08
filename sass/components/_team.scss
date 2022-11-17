@@ -40,12 +40,21 @@
     margin-bottom: 0px;
     padding-bottom: 30px;
     padding-top: 30px;
-    width: 270px;
+    //width: 270px;
+    width: 100%;
     border-radius: 0px 0px 4px 4px;
     box-shadow: var(--card-wrapper-shadow);
     border-top: none;
     text-align: center;
     background: var(--white-bg);
+    @media screen and (min-width:768px) {
+            width: 354px;
+        }
+    
+    @media screen and (min-width:1200px) {
+            width: 270px;
+        }
+
     & .social-links__link {
             color: var(--icons-social-grey);
         }
