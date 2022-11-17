@@ -158,6 +158,8 @@ body {
     text-decoration: none;
 }
 */
+/*mixins*/
+/*@include backgr-image-and-grad ('../images/banner-studio-img-1.jpg');*/
 /*components*/
 .header {
   width: 100%;
@@ -600,23 +602,58 @@ body {
 
 .hero {
   /*width: 100%;*/
-  max-width: 1600px;
+  max-width: 480px;
+  height: 400px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-color: var(--bannerclr);
-  padding-top: 200px;
-  padding-bottom: 200px;
   text-align: center;
   background-repeat: no-repeat;
-  /*margin-top: 0;*/
   margin: 0 auto;
   background-position: center;
-  background-image: -webkit-gradient(linear, right bottom, left top, from(var(--gradient-start-hero)), to(var(--gradient-end-hero))), url("../images/banner-studio-img-1.jpg");
-  background-image: linear-gradient(to top left, var(--gradient-start-hero), var(--gradient-end-hero)), url("../images/banner-studio-img-1.jpg");
+  background-image: -webkit-gradient(linear, right bottom, left top, from(var(--gradient-start-hero)), to(var(--gradient-end-hero))), url("../images/hero-img-mob.jpg");
+  background-image: linear-gradient(to top left, var(--gradient-start-hero), var(--gradient-end-hero)), url("../images/hero-img-mob.jpg");
   background-repeat: none;
   background-size: cover;
   background-attachment: scroll;
   /*fixed;*/
 }
-
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, right bottom, left top, from(var(--gradient-start-hero)), to(var(--gradient-end-hero))), url("../images/hero-img-mob-2x.jpg");
+    background-image: linear-gradient(to top left, var(--gradient-start-hero), var(--gradient-end-hero)), url("../images/hero-img-mob-2x.jpg");
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 768px;
+    background-image: -webkit-gradient(linear, right bottom, left top, from(var(--gradient-start-hero)), to(var(--gradient-end-hero))), url("../images/hero-img-tablet.jpg");
+    background-image: linear-gradient(to top left, var(--gradient-start-hero), var(--gradient-end-hero)), url("../images/hero-img-tablet.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, right bottom, left top, from(var(--gradient-start-hero)), to(var(--gradient-end-hero))), url("../images/hero-img-tablet-2x.jpg");
+    background-image: linear-gradient(to top left, var(--gradient-start-hero), var(--gradient-end-hero)), url("../images/hero-img-tablet-2x.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: -webkit-gradient(linear, right bottom, left top, from(var(--gradient-start-hero)), to(var(--gradient-end-hero))), url("../images/hero-img-desktop.jpg");
+    background-image: linear-gradient(to top left, var(--gradient-start-hero), var(--gradient-end-hero)), url("../images/hero-img-desktop.jpg");
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, right bottom, left top, from(var(--gradient-start-hero)), to(var(--gradient-end-hero))), url("../images/hero-img-desktop-2x.jpg");
+    background-image: linear-gradient(to top left, var(--gradient-start-hero), var(--gradient-end-hero)), url("../images/hero-img-desktop-2x.jpg");
+  }
+}
 .hero__title {
   margin-top: 0;
   margin-bottom: 30px;
@@ -636,7 +673,6 @@ body {
     line-height: 1.36;
   }
 }
-
 .hero__button {
   display: inline-block;
   padding: 10px 32px;
@@ -659,9 +695,7 @@ body {
   line-height: 1.87;
   letter-spacing: 0.06em;
 }
-
-.hero-button:hover,
-.hero-button:focus {
+.hero__button:hover, .hero__button:focus {
   background-color: var(--button-to-order-active-clr);
 }
 

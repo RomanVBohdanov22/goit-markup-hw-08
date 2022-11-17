@@ -110,3 +110,21 @@ body {
     text-decoration: none;
 }
 */
+/*mixins*/
+@mixin backgr-image-and-grad ($url-i)
+{
+      background-image: linear-gradient(to top left,
+            var(--gradient-start-hero),
+            var(--gradient-end-hero)),
+          url($url-i);
+}
+/*@include backgr-image-and-grad ('../images/banner-studio-img-1.jpg');*/
+@mixin multy-img2x ($url-i2)
+{
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        @include backgr-image-and-grad ($url-i2);
+      }
+}

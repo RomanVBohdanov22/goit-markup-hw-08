@@ -1,25 +1,40 @@
 .hero {
     /*width: 100%;*/
-    max-width: 1600px;
+    max-width: 480px;
+    height: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 118px;
+    padding-bottom: 118px;
+
     background-color: var(--bannerclr);
-    padding-top: 200px;
-    padding-bottom: 200px;
+
     text-align: center;
     background-repeat: no-repeat;
-    /*margin-top: 0;*/
     margin: 0 auto;
     background-position: center;
-    background-image: linear-gradient(to top left,
-            var(--gradient-start-hero),
-            var(--gradient-end-hero)),
-        url('../images/banner-studio-img-1.jpg');
+    @include backgr-image-and-grad ('../images/hero-img-mob.jpg');
+    @include multy-img2x ('../images/hero-img-mob-2x.jpg');
     background-repeat: none;
     background-size: cover;
     background-attachment: scroll;
     /*fixed;*/
-}
+    @media screen and (min-width:768px) {
+        max-width: 768px;
+        @include backgr-image-and-grad ('../images/hero-img-tablet.jpg');
+        @include multy-img2x ('../images/hero-img-tablet-2x.jpg');
+    }
+    @media screen and (min-width:1200px){
+    
+        max-width: 1600px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+        @include backgr-image-and-grad ('../images/hero-img-desktop.jpg');
+            @include multy-img2x ('../images/hero-img-desktop-2x.jpg');
+        
+    }
 
-.hero__title {
+&__title {
     margin-top: 0;
     margin-bottom: 30px;
     margin-left: auto;
@@ -32,7 +47,7 @@
     max-width: 100%;
     font-size: 26px;
     line-height: 1.62;
-    
+
     @media screen and (min-width:1200px){
     max-width: 696px;
     font-size: 44px;
@@ -42,7 +57,7 @@
 
 }
 
-.hero__button {
+&__button {
     display: inline-block;
     padding: 10px 32px;
     min-width: 216px;
@@ -63,7 +78,9 @@
     letter-spacing: 0.06em;
 }
 
-.hero-button:hover,
-.hero-button:focus {
+&__button:hover,
+&__button:focus {
     background-color: var(--button-to-order-active-clr);
+}
+
 }
