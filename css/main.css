@@ -468,6 +468,14 @@ body {
 @media screen and (min-width: 1200px) {
   .social-links-hello,
 .footer-block-hello {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: row;
+        flex-wrap: row;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
     margin-top: 0;
     margin-bottom: 20px;
     font-weight: 500;
