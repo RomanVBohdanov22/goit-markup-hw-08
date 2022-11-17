@@ -8,11 +8,18 @@
 }
 
 .footer-block-sys {
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
-  justify-content: left;
-  gap: 93px;
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: left;
+        gap: 93px;
+    }
 
   &__item {
     /*display: flex;*/
