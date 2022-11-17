@@ -25,37 +25,38 @@
     height: 100%;
     position: relative;
     overflow: auto;
-    //position: fixed;
+    position: fixed;
 
     /*top: calc(100% / 2 - 260px);
     left: calc(100% / 2 - 264px);
     width: 528px;
     height: 581px;*/
+
         @media screen and (min-width: 480px) {
                     top: 0;
                     left: 0;
                     width: 450px;
                     height: 609px;
-                    //position: fixed;
+                    position: fixed;
                     overflow: auto;
-                    transform: translateX(-50%);
+                    //transform: translateX(-50%);
                  }
         @media screen and (min-width: 768px) {
-                    //position: fixed;
+                    position: fixed;
                     top: calc(100% / 2 - 225px);
                     left: calc(100% / 2 - 300px);
                     width: 450px;
                     height: 609px;
                     overflow: auto;
-                    transform: translateX(-50%);
+                    //transform: translateX(-50%);
                 }
          @media screen and (min-width: 1200px) {
-            //position: fixed;
+            position: fixed;
             top: calc(100% / 2 - 260px);
             left: calc(100% / 2 - 264px);
             width: 528px;
             height: 581px;
-            transform: translateX(-50%);
+            //transform: translateX(-50%);
          }
     display: block;
     border: none;

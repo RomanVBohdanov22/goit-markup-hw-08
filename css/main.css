@@ -619,15 +619,22 @@ body {
 
 .hero__title {
   margin-top: 0;
-  max-width: 696px;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
-  font-size: 44px;
   letter-spacing: 0.06em;
   font-weight: 900;
   color: var(--whitetxt);
-  line-height: 1.36;
+  max-width: 100%;
+  font-size: 26px;
+  line-height: 1.62;
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero__button {
@@ -1091,6 +1098,7 @@ body {
   height: 100%;
   position: relative;
   overflow: auto;
+  position: fixed;
   /*top: calc(100% / 2 - 260px);
   left: calc(100% / 2 - 264px);
   width: 528px;
@@ -1110,30 +1118,27 @@ body {
     left: 0;
     width: 450px;
     height: 609px;
+    position: fixed;
     overflow: auto;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
   }
 }
 @media screen and (min-width: 768px) {
   .modal {
+    position: fixed;
     top: calc(50% - 225px);
     left: calc(50% - 300px);
     width: 450px;
     height: 609px;
     overflow: auto;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
   }
 }
 @media screen and (min-width: 1200px) {
   .modal {
+    position: fixed;
     top: calc(50% - 260px);
     left: calc(50% - 264px);
     width: 528px;
     height: 581px;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
   }
 }
 

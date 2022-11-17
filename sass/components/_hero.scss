@@ -21,15 +21,25 @@
 
 .hero__title {
     margin-top: 0;
-    max-width: 696px;
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
-    font-size: 44px;
+        
+    
     letter-spacing: 0.06em;
     font-weight: 900;
     color: var(--whitetxt);
-    line-height: 1.36;
+    max-width: 100%;
+    font-size: 26px;
+    line-height: 1.62;
+    
+    @media screen and (min-width:1200px){
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.36; 
+    }
+    
+
 }
 
 .hero__button {
