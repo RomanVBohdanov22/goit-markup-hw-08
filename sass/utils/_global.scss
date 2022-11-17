@@ -50,11 +50,6 @@ body {
   margin: -1px;
 }
 
-.no-marker-list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
 
 .container {
   margin-left: auto;
@@ -99,10 +94,17 @@ body {
   color: var(--fontcolorh3);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.no-marker-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 /*
 %list {
     list-style: none;
 }
+
 
 %link {
     text-decoration: none;
