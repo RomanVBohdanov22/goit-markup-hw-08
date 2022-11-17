@@ -37,11 +37,22 @@
 
 .social-links-hello,
 .footer-block-hello {
-  margin-top: 0;
-  margin-bottom: 20px;
-  font-weight: 500;
-  letter-spacing: 0.03em;
-  line-height: 1.14;
+    
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 500;
+    justify-content: center;
+    gap: 20px;
+    @media screen and (min-width: 1200px) 
+    {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    line-height: 1.14;
+    }
 }
 
 .address__footer {
@@ -141,7 +152,7 @@
       /*10px*/
       width: calc(100% - 10px);
       height: 50px;
-        @media screen and (min-width: 768px)
+        @media screen and (min-width: 480px)
         {
             width: 450px;
         }
