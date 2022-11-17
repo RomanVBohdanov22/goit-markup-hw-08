@@ -948,7 +948,7 @@ body {
   height: 100%;
   background-color: var(--bgcolor);
   padding: 48px 40px;
-  z-index: 1;
+  z-index: 3;
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1008,7 +1008,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--fontcolorh3);
 }
-.mobile-menu__adress-link {
+.mobile-menu__adress-link:not(:last-child) {
   font-family: inherit;
   text-decoration: none;
   font-family: inherit;
@@ -1018,7 +1018,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--bluetextclr);
 }
-.mobile-menu__adress-link:nth-child(1) {
+.mobile-menu__adress-link:last-child {
   font-size: 24px;
   color: var(--fontcolordescrp);
 }
