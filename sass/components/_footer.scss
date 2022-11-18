@@ -58,11 +58,31 @@
     }
 }
 
+.footer-block-sys__item .logo
+{   display: flex;
+    flex-wrap: row;
+    justify-content: center;
+        @media screen and (min-width: 1200px) {
+                display: flex;
+                flex-wrap: row;
+                justify-content: left;
+        }
+}
 .address__footer {
   font-style: inherit;
 }
 
 .address-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    
+        @media screen and (min-width: 1200px) {
+            display: block;
+            flex-wrap: row;
+            justify-content: left;
+        }
   &__item {
     &:not(:last-child) {
       margin-bottom: 9px;
