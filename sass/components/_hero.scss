@@ -14,16 +14,8 @@
     margin: 0 auto;
     background-position: center;
     @include backgr-image-and-grad ('../images/hero-img-mob.jpg');
-    //@include multy-img2x ('../images/hero-img-mob@2x.jpg');
-    @media (-webkit-min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-                @include backgr-image-and-grad ('../images/hero-img-mob@2x.jpg');
-                /*background-image: linear-gradient(to top left,
-                            var(--gradient-start-hero),
-                            var(--gradient-end-hero)),
-                        url('../images/hero-img-mob@2x.jpg');*/
-            }
+    @include multy-img2x ('../images/hero-img-mob@2x.jpg');
+   
     background-repeat: none;
     background-size: cover;
     background-attachment: scroll;
@@ -34,23 +26,15 @@
         @include multy-img2x ('../images/hero-img-tablet@2x.jpg');
   
     }
-          /*@media (-webkit-min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-                @include backgr-image-and-grad ('../images/hero-img-tablet@2x.jpg');
-            }*/
+         
     @media screen and (min-width:1200px){
     
         max-width: 1600px;
         padding-top: 200px;
         padding-bottom: 200px;
         @include backgr-image-and-grad ('../images/hero-img-desktop.jpg');
-         @include multy-img2x ('../images/hero-img-desktop@2x.jpg');
-        /*@media (-webkit-min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-                @include backgr-image-and-grad ('../images/hero-img-desktop@2x.jpg');
-            }*/
+        @include multy-img2x ('../images/hero-img-desktop@2x.jpg');
+
         
     }
 

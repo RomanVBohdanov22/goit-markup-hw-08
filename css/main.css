@@ -727,8 +727,8 @@ body {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, right bottom, left top, from(var(--gradient-start-hero)), to(var(--gradient-end-hero))), url("../images/hero-img-mob-2x.jpg");
-    background-image: linear-gradient(to top left, var(--gradient-start-hero), var(--gradient-end-hero)), url("../images/hero-img-mob-2x.jpg");
+    background-image: -webkit-gradient(linear, right bottom, left top, from(var(--gradient-start-hero)), to(var(--gradient-end-hero))), url("../images/hero-img-mob@2x.jpg");
+    background-image: linear-gradient(to top left, var(--gradient-start-hero), var(--gradient-end-hero)), url("../images/hero-img-mob@2x.jpg");
   }
 }
 @media screen and (min-width: 768px) {
@@ -740,8 +740,8 @@ body {
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, right bottom, left top, from(var(--gradient-start-hero)), to(var(--gradient-end-hero))), url("../images/hero-img-tablet-2x.jpg");
-    background-image: linear-gradient(to top left, var(--gradient-start-hero), var(--gradient-end-hero)), url("../images/hero-img-tablet-2x.jpg");
+    background-image: -webkit-gradient(linear, right bottom, left top, from(var(--gradient-start-hero)), to(var(--gradient-end-hero))), url("../images/hero-img-tablet@2x.jpg");
+    background-image: linear-gradient(to top left, var(--gradient-start-hero), var(--gradient-end-hero)), url("../images/hero-img-tablet@2x.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
@@ -755,8 +755,8 @@ body {
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, right bottom, left top, from(var(--gradient-start-hero)), to(var(--gradient-end-hero))), url("../images/hero-img-desktop-2x.jpg");
-    background-image: linear-gradient(to top left, var(--gradient-start-hero), var(--gradient-end-hero)), url("../images/hero-img-desktop-2x.jpg");
+    background-image: -webkit-gradient(linear, right bottom, left top, from(var(--gradient-start-hero)), to(var(--gradient-end-hero))), url("../images/hero-img-desktop@2x.jpg");
+    background-image: linear-gradient(to top left, var(--gradient-start-hero), var(--gradient-end-hero)), url("../images/hero-img-desktop@2x.jpg");
   }
 }
 .hero__title {
