@@ -1034,7 +1034,7 @@ body {
   }
 }
 
-.text__wrapper {
+.team__wrapper {
   margin-top: 0;
   margin-bottom: 0px;
   padding-bottom: 30px;
@@ -1049,16 +1049,16 @@ body {
   /*.social-links__link описаний в _footer.scss*/
 }
 @media screen and (min-width: 768px) {
-  .text__wrapper {
+  .team__wrapper {
     width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .text__wrapper {
+  .team__wrapper {
     width: 270px;
   }
 }
-.text__wrapper .social-links__link {
+.team__wrapper .social-links__link {
   color: var(--icons-social-grey);
 }
 
