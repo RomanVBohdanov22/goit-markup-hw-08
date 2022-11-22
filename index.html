@@ -166,12 +166,35 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list no-marker-list">
             <li class="team__item">
-              <img
-                class="team__image"
-                src="./images/img4-igor.jpg"
-                alt="Фото портрет: Ігор Дем'яненко"
-                loading="lazy"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-img/team1-demiyanenko-mob.jpg    1x,
+                    ./images/team-img/team1-demiyanenko-mob@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-img/team1-demiyanenko-tablet.jpg    1x,
+                    ./images/team-img/team1-demiyanenko-tablet@2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-img/team1-demiyanenko-desktop.jpg    1x,
+                    ./images/team-img/team1-demiyanenko-desktop@2x.jpg 2x
+                  "
+                  media="(max-width: 1200px)"
+                />
+                <img
+                  class="team__image"
+                  src="./images/team-img/team1-demiyanenko-desktop.jpg"
+                  alt="Фото портрет: Ігор Дем'яненко"
+                  loading="lazy"
+                />
+              </picture>
               <div class="text__wrapper">
                 <h3 class="team__person-title">Ігор Дем'яненко</h3>
                 <p class="team__person-text">Product Designer</p>
@@ -208,12 +231,14 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__image"
-                src="./images/img5-olga.jpg"
-                alt="Фото портрет: Ольга Рєпіна"
-                loading="lazy"
-              />
+              <picture>
+                <img
+                  class="team__image"
+                  src="./images/team-img/team2-riepina-desktop.jpg"
+                  alt="Фото портрет: Ольга Рєпіна"
+                  loading="lazy"
+                />
+              </picture>
               <div class="text__wrapper">
                 <h3 class="team__person-title">Ольга Рєпіна</h3>
                 <p class="team__person-text">Frontend Developer</p>
@@ -250,12 +275,14 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__image"
-                src="./images/img6-mikola.jpg"
-                alt="Фото портрет: Микола Тарасов"
-                loading="lazy"
-              />
+              <picture>
+                <img
+                  class="team__image"
+                  src="./images/team-img/team3-tarasov-desktop.jpg"
+                  alt="Фото портрет: Микола Тарасов"
+                  loading="lazy"
+                />
+              </picture>
               <div class="text__wrapper">
                 <h3 class="team__person-title">Микола Тарасов</h3>
                 <p class="team__person-text">Marketing</p>
@@ -292,12 +319,14 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__image"
-                src="./images/img7-mikhailo.jpg"
-                alt="Фото портрет: Михайло Єрмаков"
-                loading="lazy"
-              />
+              <picture>
+                <img
+                  class="team__image"
+                  src="./images/team-img/team4-yermakov-desktop.jpg"
+                  alt="Фото портрет: Михайло Єрмаков"
+                  loading="lazy"
+                />
+              </picture>
               <div class="text__wrapper">
                 <h3 class="team__person-title">Михайло Єрмаков</h3>
                 <p class="team__person-text">UI Designer</p>

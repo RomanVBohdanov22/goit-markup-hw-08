@@ -1062,11 +1062,6 @@ body {
   color: var(--icons-social-grey);
 }
 
-.team__image {
-  width: 270px;
-  height: 260px;
-}
-
 .team__person-title {
   margin-top: 0;
   margin-bottom: 10px;
