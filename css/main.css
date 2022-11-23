@@ -1403,10 +1403,11 @@ body {
 @media screen and (min-width: 768px) {
   .modal {
     position: fixed;
-    top: calc(50% - 225px);
+    top: calc(50% - 260px);
     left: 50%;
     width: 450px;
     height: 609px;
+    overflow: scroll;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }

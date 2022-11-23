@@ -44,13 +44,16 @@
                  }
         @media screen and (min-width: 768px) {
                     position: fixed;
-                    top: calc(50% - 225px);
+                    top: calc(50% - 260px);
                     //left: calc(50% - 300px);
+                    //top: 50%;
                     left: 50%;
                     width: 450px;
                     height: 609px;
                     //overflow: auto;
+                    overflow: scroll;
                     transform: translateX(-50%);
+                    //transform: translateY(-50%);
                 }
          @media screen and (min-width: 1200px) {
             position: fixed;
