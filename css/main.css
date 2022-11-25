@@ -402,16 +402,24 @@ body {
 
 .logo {
   font-size: 24px;
+  font-weight: 700;
   letter-spacing: 0.03em;
   text-decoration: none;
   font-family: var(--bannerfont);
   color: inherit;
+  line-height: 1.1666666667;
   /*padding: 24px 0;*/
   font-weight: 700;
   line-height: 1.19;
   /*.header-logo, .footer-logo {
       padding: 24px 0;
   }*/
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.1923076923;
+  }
 }
 .logo--accent {
   color: var(--bluetextclr);
