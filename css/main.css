@@ -193,6 +193,26 @@ body {
 */
 /*mixins*/
 /*@include backgr-image-and-grad ('../images/banner-studio-img-1.jpg');*/
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: visible;
+  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 1;
+  background-color: var(--modal-bg-color);
+  overflow: scroll;
+}
+
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
 /*components*/
 .header {
   width: 100%;
@@ -1422,77 +1442,55 @@ body {
   width: 0px;
 }
 
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--modal-bg-color);
-  opacity: 1;
-  visibility: visible;
-  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  overflow: scroll;
-}
-
-.backdrop.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-
 .modal {
+  position: fixed;
   margin: 0 auto;
+  padding: 40px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
-  overflow: scroll;
-  position: fixed;
-  /*top: calc(100% / 2 - 260px);
-  left: calc(100% / 2 - 264px);
-  width: 528px;
-  height: 581px;*/
-  display: block;
-  border: none;
   border-radius: 4px;
   background-color: var(--white-bg);
-  padding-left: 41px;
-  padding-right: 39px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  overflow: scroll;
+  /*box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+          0px 2px 1px rgba(0, 0, 0, 0.2);*/
 }
 @media screen and (min-width: 480px) {
   .modal {
-    top: 0;
-    left: 50%;
-    width: 450px;
+    max-width: 450px;
     height: 609px;
-    position: fixed;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
   }
 }
 @media screen and (min-width: 768px) {
   .modal {
-    position: fixed;
-    top: calc(50% - 260px);
+    position: absolute;
+    top: 50%;
     left: 50%;
     width: 450px;
-    height: 609px;
-    overflow: scroll;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+    -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 @media screen and (min-width: 1200px) {
   .modal {
-    position: fixed;
-    top: calc(50% - 260px);
+    position: absolute;
+    top: 50%;
     left: 50%;
     width: 528px;
     height: 581px;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+    -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
@@ -1610,21 +1608,12 @@ body {
   margin-top: 0;
   padding: 0;
   margin-bottom: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  display: inline;
   outline: none;
   gap: 8px;
 }
-
 .agree-check-block__label {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -1635,7 +1624,6 @@ body {
   letter-spacing: 0.03em;
   padding-left: 44px;
 }
-
 .agree-check-block__checkbox {
   -webkit-appearance: none;
   -moz-appearance: none;
