@@ -164,21 +164,22 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
-@media screen and (min-width: 1200px) {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  gap: 12px;
-}
-  &__label {
-  }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+      gap: 12px;
+    }
+    &__label {
+    }
 
   &__input {
     & {
-      margin: 0;
+      margin-left: 0;
+      margin-right: auto;
       /*10px*/
-      width: 100%;//calc(100% - 10px);
-      max-width: 450px;
+      max-width: 100%;//calc(100% - 10px);
+      //max-width: 450px;
       height: 50px;
         @media screen and (min-width: 480px)
         {

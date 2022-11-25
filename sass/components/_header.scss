@@ -1,7 +1,7 @@
 .header {
   width: 100%;
   border-bottom: 1px solid var(--header-frame-color);
-
+  align-items: baseline;
   &--flex-box {
     display: flex;
     align-items: center;
