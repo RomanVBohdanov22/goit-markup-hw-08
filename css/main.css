@@ -485,6 +485,9 @@ body {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   gap: 60px;
 }
 @media screen and (min-width: 1200px) {
@@ -714,10 +717,9 @@ body {
   }
 }
 .footer-form__input {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
   /*10px*/
-  width: calc(100% - 10px);
+  max-width: 450px;
   height: 50px;
   border-radius: 4px;
   padding: 15px 16px 15px 16px;
@@ -733,11 +735,15 @@ body {
 }
 @media screen and (min-width: 480px) {
   .footer-form__input {
+    margin-top: 0;
+    margin-bottom: 0;
     width: 450px;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer-form__input {
+    margin-top: 0;
+    margin-bottom: 0;
     width: 358px;
   }
 }

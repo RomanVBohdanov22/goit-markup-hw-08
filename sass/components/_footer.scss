@@ -12,6 +12,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;//center;
+    align-items: baseline;
     gap: 60px;
     @media screen and (min-width: 1200px) {
         display: flex;
@@ -174,17 +175,21 @@
 
   &__input {
     & {
-      margin-top: 0;
-      margin-bottom: 0;
+      margin: 0;
       /*10px*/
-      width: calc(100% - 10px);
+      //width: 100%;//calc(100% - 10px);
+      max-width: 450px;
       height: 50px;
         @media screen and (min-width: 480px)
         {
+            margin-top: 0;
+            margin-bottom: 0;
             width: 450px;
         }
         @media screen and (min-width: 1200px)
         {
+            margin-top: 0;
+            margin-bottom: 0;
             width: 358px;
         }
       border-radius: 4px;
