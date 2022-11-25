@@ -177,7 +177,7 @@
     & {
       margin: 0;
       /*10px*/
-      //width: 100%;//calc(100% - 10px);
+      width: 100%;//calc(100% - 10px);
       max-width: 450px;
       height: 50px;
         @media screen and (min-width: 480px)
