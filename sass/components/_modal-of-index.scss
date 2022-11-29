@@ -159,19 +159,37 @@
     //flex-direction: row;
     //text-align: center;
     outline: none;
-    gap: 8px;
-
+    gap: 8px; 
+    font-size: 12px;
+    line-height: calc(14/12);
+    @media screen and (min-width:480px)
+    {
+       /*display: flex;
+       flex-direction: row;
+       justify-content: wrap;*/
+    }
+        @media screen and (min-width:1200px) {
+            display: flex;
+                flex-direction: row;
+                justify-content: wrap;
+            font-size: 14px;
+            line-height: calc(24/14);
+        }
 
 
 &__label {
     display: inline;
-    flex-direction: row;
     position: relative;
     //text-align: end;
     color: var(--fontcolordescrp);
     line-height: 1.71;
     letter-spacing: 0.03em;
     padding-left: 44px;
+    /*
+    @media screen and (min-width:480px) {
+            display: flex;
+            flex-direction: row;
+        }*/
 }
 
 &__checkbox {
@@ -179,7 +197,25 @@
     -moz-appearance: none;
     appearance: none;
 }
+&__label-link {
+    display: inline;
+    position: relative;
+    color: var(--fontcolordescrp);
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--bluebtn);
+    outline: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline;
+    /*
+    @media screen and (min-width:480px) {
+        display: flex;
+        flex-direction: row;
+    }*/
 }
+}
+
+
 .agree-check-block__alt-checkbox {
     position: absolute;
     display: inline-block;
@@ -222,16 +258,7 @@
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }*/
 
-.agree-check-block__label-link {
-    position: relative;
-    color: var(--fontcolordescrp);
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-     color: var(--bluebtn);
-    outline: none;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    display: inline;
-}
+
 
 .submit-button {
     position: relative;
