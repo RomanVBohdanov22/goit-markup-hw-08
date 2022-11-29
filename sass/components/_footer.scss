@@ -27,6 +27,11 @@
   &__item {
     /*display: flex;*/
     flex-direction: column;
+    width: 100%;
+    @media screen and (min-width: 480px)
+    {
+      width: auto;
+    }
   }
 
   &__item--concern {
@@ -180,7 +185,7 @@
       margin-left: 0;
       margin-right: auto;
       /*10px*/
-      max-width: 100%;//calc(100% - 10px);
+      width: 100%;//calc(100% - 10px);
       //max-width: 450px;
       height: 50px;
         @media screen and (min-width: 480px)
